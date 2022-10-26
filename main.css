@@ -280,14 +280,15 @@ h3{
     color: var(--background-color);
 }
 
-/*  ------------------
-    |    THE TEAM    |
-    ------------------  */
+/*  ---------------
+    |    ABOUT    |
+    ---------------  */
 
 .about{
     width: 70%;
     text-align: center;
-    margin: 100px auto;
+    padding-top: 3px;
+    margin: 70px auto;
     padding-bottom: 40px;
 }
 
@@ -297,112 +298,129 @@ h3{
     gap: 20px;
 }
 
-/*  -----------------
-    |    CONTACT    |
-    -----------------  */
+/*  -----------------------------
+    |    CONTACT & NEWSLETTER   |
+    -----------------------------  */
 
 .contact{
-    background-color: #000;
-    padding-top: 50px;
-    color: white;
+    padding-bottom: 10px;
+}
+    
+.contact .row{
+    display: flex;
+    background: #C8988F;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 40px;
 }
 
-.contact .contact-container{
-    color: var(--background-color);
-    width: 1280px;
-    margin: 0 auto;
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
 }
 
-.contact .contact-container h3{
-    color: white;
-}
-
-.contact .contact-container .location h3{
-    text-align: left;
-}
-
-.contact .contact-container .social{
+.contact .row form{
+    flex: 1 1 45rem;
     text-align: center;
 }
 
-.contact .contact-container .social a:hover path{
-    fill: var(--highlight-color);
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color:#fff;
 }
 
-/*  --------------------
-    |    NEWSLETTER    |
-    --------------------  */
-
-.contact .contact-container .newsText{
-    text-align: right;
-}
-
-.contact .contact-container .newsText h3{
-    text-align: right;
-}
-
-.newsText {
-    width: 280px;
-}
-  
-form {
-    position: relative;
-    display: block;
-    height: 70px;
-    border-radius: 35px;
-    background: white;
-    margin: 0 auto;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
-    overflow: hidden;
-}
-
-form input {
-    line-height: 70px;
-    padding: 0;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    font-weight: 300;
-    background: #eee;
-    letter-spacing: 0.02em;
-}
-
-form input:not([type=submit]) {
-    width: 100%;
-    display: block;
-    padding: 0 150px 0 30px;
-}
-
-form input:not([type=email]) {
-    position: absolute;
-    height: 50px;
-    line-height: 50px;
-    top: 10px;
-    right: 10px;
-    border-radius: 25px;
-    padding: 0 25px;
-    background: #000;
-    color: white;
-    cursor: pointer;
-}
-
-form input:not([type=email]):hover {
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     background: #C8988F;
+    border: none;
+    border-radius: 45px;
 }
 
-form input:focus {
-    outline: none;
-    background: white;
+.contact .row form .inputBox span{
+    color:#fff;
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    border: none;
+    border-radius: 45px;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color:#C8988F;
+    text-transform: none;
+    background: #fff;
+    border: none;
+    border-radius: 45px;
+}
+
+.contact .row form .submit-btn input{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#000;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 45px;
+    border: none;
+}
+
+.contact .row form .submit-btn input:hover{
+    background: #FDE7E3;
 }
 
 /*  ----------------
     |    FOOTER    |
     ----------------  */
 
-footer{
+.footer {
     background-color: #000;
-    height: 450px;
-    margin-top: -170px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    color: white;
+}
+
+.footer .footer-container {
+    color: var(--background-color);
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.footer .footer-container h3 {
+    color: white;
+}
+
+.footer .footer-container .contact-us {
+    text-align: left;
+}
+
+.footer .footer-container .contact-us h3 {
+    text-align: left;
+}
+
+.footer .footer-container .social {
+    text-align: center;
+}
+
+.footer .footer-container .social a:hover path {
+    fill: var(--highlight-color);
+}
+
+.footer .footer-container .support{
+    text-align: right;
+}
+
+.footer .footer-container .support h3{
+    text-align: right;
 }
 
 /*  ----------------
@@ -504,16 +522,16 @@ footer{
         height: 150px;
     }
 
-    .contact .contact-container{
+    .footer .footer-container{
         width: 90%;
         margin: 0 auto;
         text-align: center;
     }
 
-    .contact .contact-container h3{
+    .footer .footer-container h3{
         text-align: center !important;
     }
-    .contact .contact-container .newsText{
+    .footer .footer-container .support{
         text-align: center;
     }
 }
