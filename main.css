@@ -228,14 +228,12 @@ h3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
-    
 }
 
 .grid .item{
     position: relative;
     overflow: hidden;
     min-height: 300px;
-    
 }
 
 .grid .item img{
@@ -243,7 +241,6 @@ h3{
     margin-top: 0;
     transform: skewY(0deg) scale(1.2,1.2);
     transition: all 0.075s;
-    
 }
 
 .grid .item:hover img{
@@ -295,9 +292,9 @@ h3{
     padding-bottom: 40px;
 }
 
-.columns{
+.about .columns{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 
